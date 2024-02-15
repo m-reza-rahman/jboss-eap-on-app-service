@@ -1,5 +1,5 @@
 # Deploying a Java/Jakarta EE Application to JBoss EAP on Azure App Service
-This demo shows how you can deploy a Java/Jakarta EE application to Azure using managed JBoss EAP on App Service (the premier PaaS platform on Azure). The following is how you run the demo.
+This demo shows how you can deploy a Java/Jakarta EE application to Azure using managed JBoss EAP on App Service (the premier PaaS platform on Azure). It is the demo for [this](https://www.papercall.io/speakers/reza/speaker_talks/260453-hyperscale-jakarta-ee-paas-on-azure) talk
 
 ## Setup
 * Install JDK 11 (we used [Eclipse Temurin OpenJDK 11 LTS](https://adoptium.net/?variant=openjdk11)).
