@@ -10,8 +10,6 @@ We use Visual Studio Code but you can use any Maven capable IDE such as Eclipse 
 * You will need an Azure subscription. If you don't have one, you can get one for free for one year [here](https://azure.microsoft.com/en-us/free).
 
 ## Start Managed PostgreSQL on Azure
-We will be using the fully managed PostgreSQL offering in Azure for this demo. If you have not set it up yet, please do so now. 
-
 * Go to the [Azure portal](http://portal.azure.com).
 * Select 'Create a resource'. In the search box, enter and select 'Azure Database for PostgreSQL'. Hit create.
 * Create a new resource group named jakartaee-cafe-group-`<your suffix>` (the suffix could be your first name such as "reza"). Specify the Server name to be jakartaee-cafe-db-`<your suffix>` (the suffix could be your first name such as "reza"). Specify the login name to be postgres. Specify the password to be Secret123!. Click Next to go to the Networking tab.
