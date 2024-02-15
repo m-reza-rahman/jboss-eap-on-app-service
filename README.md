@@ -2,6 +2,9 @@
 This demo shows how you can deploy a Java/Jakarta EE application to Azure using managed JBoss EAP on App Service (the premier PaaS platform on Azure). The following is how you run the demo.
 
 ## Setup
+* Install Java SE 11 (we used [Adoptium Temurin JDK 11](https://adoptium.net/marketplace/)).
+* Install the Eclipse IDE for Enterprise Java Developers from [here](https://www.eclipse.org/downloads/packages/).
+* Download this repository somewhere in your file system (easiest way might be to download as a zip and extract).
 * You will need an Azure subscription. If you don't have one, you can get one for free for one year [here](https://azure.microsoft.com/en-us/free).
 
 ## Start Managed PostgreSQL on Azure
