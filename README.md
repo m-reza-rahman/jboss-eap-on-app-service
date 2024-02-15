@@ -1,5 +1,5 @@
-# Deploying a Jakarta EE Application on Azure using PaaS
-This demo shows how you can deploy a Jakarta EE application to Azure using managed JBoss EAP. The following is how you run the demo.
+# Deploying a Java/Jakarta EE Application to JBoss EAP on Azure App Service
+This demo shows how you can deploy a Java/Jakarta EE application to Azure using managed JBoss EAP on App Service (the premier PaaS platform on Azure). The following is how you run the demo.
 
 ## Setup
 * You will need an Azure subscription. If you don't have one, you can get one for free for one year [here](https://azure.microsoft.com/en-us/free).
