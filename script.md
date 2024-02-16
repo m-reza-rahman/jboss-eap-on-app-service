@@ -1,5 +1,5 @@
 * App Insight
-* Log strean
+* Log stream
 * SSH
 * App Service extension
 * Authentication
