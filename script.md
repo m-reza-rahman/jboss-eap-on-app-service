@@ -2,7 +2,7 @@
 * Log stream
 * SSH
 * Backup
-* App Service extension
+* App Service VS Code extension
 * Authentication
 * Health check
 * Scale out
