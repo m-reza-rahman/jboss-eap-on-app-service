@@ -24,6 +24,7 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 * Select 'Create a resource'. In the search box, enter and select 'Web App'. Hit create.
 * Enter jakartaee-cafe-web-`<your suffix>` (the suffix could be your first name such as "reza") as application name and select jakartaee-cafe-group-`<your suffix>` as the resource group. Choose Java 11 as your runtime stack and JBoss EAP 7 as the Java web server stack. Hit create.
 * In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the server environment variables panel.
+* Add the following variables: DB_HOST=jakartaee-cafe-db-`<your suffix>`.postgres.database.azure.com, DB_USERNAME=postgres, DB_PASSWORD=Secret123!.
 
 ## Install the Azure CLI
 * In order to deploy the application, we will need to [install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
