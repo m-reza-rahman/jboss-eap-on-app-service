@@ -38,7 +38,7 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 
 ## Setup Authentication
 * In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the authentication panel.
-* Click on 'Add identity provider'. Choose and set up your favorite identity provider.
+* Click on 'Add identity provider'. Choose and set up your favorite identity provider. If you choose Microsoft, just pick all the defaults.
 
 ## Install the Azure CLI
 * In order to deploy the application, we will need to [install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
