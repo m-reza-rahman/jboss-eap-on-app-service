@@ -29,6 +29,7 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 * Add the following variables: DB_HOST=jakartaee-cafe-db-`<your suffix>`.postgres.database.azure.com, DB_USERNAME=postgres, DB_PASSWORD=Secret123!.
 
 ## Setup Health Check
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the server environment variables panel.
 
 ## Install the Azure CLI
 * In order to deploy the application, we will need to [install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
