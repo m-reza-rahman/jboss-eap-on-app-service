@@ -33,7 +33,11 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 * Click on Health Check -> Not Configured. Select 'Enable'. For the path enter '/rest/coffees'. Hit save.
 
 ## Setup Scale Out
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the scale out panel. * Select automatic. Hit save.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the scale out panel.
+* Select automatic. Hit save.
+
+## Setup Authentication
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the authentication panel.
 
 ## Install the Azure CLI
 * In order to deploy the application, we will need to [install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
