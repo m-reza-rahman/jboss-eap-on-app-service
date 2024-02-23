@@ -3,4 +3,3 @@
 * SSH
 * Backup
 * App Service VS Code extension
-* Authentication
