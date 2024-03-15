@@ -117,6 +117,7 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
 You may also deploy the applocation using GitHub Actions. The following is how you do it.
 
 * In the portal home, go to 'Microsoft Entra ID' -> App registrations -> New registration. For the name, specify jakartaee-cafe-principal-`<your suffix>` and hit 'Register'.
+* In the portal home, go to 'Microsoft Entra ID' -> App registrations -> All applications. Select jakartaee-cafe-principal-`<your suffix>`. Go to Certificates & secrets -> New client secret. Specify a description such as 'Jakarta EE Cafe Secret'. Hit 'Add'. Note down the secret value.
 
 ## To Do
 * Create DB inside App Service dialog?
