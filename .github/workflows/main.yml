@@ -27,12 +27,11 @@ jobs:
       - name: Log into Azure
         uses: azure/login@v2
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}  
-
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Deploy WAR
         uses: azure/webapps-deploy@v3
         with:
           app-name: jakartaee-cafe-web-reza
           package: jakartaee-cafe/target/jakartaee-cafe.war
-
-        
