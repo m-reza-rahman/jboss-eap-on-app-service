@@ -114,7 +114,7 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
 * Once the application starts, you can test the REST service at the URL: https://jakartaee-cafe-web-your-suffix.azurewebsites.net/rest/coffees or via the JSF client at https://jakartaee-cafe-web-your-suffix.azurewebsites.net/index.xhtml.
 
 ## Deploy using GitHub Actions
-You may also deploy the applocation using GitHub Actions. The following is how you do it.
+You may also deploy the application using GitHub Actions. The following is how you do it.
 
 * In the portal home, go to 'Microsoft Entra ID' -> App registrations -> New registration. For the name, specify jakartaee-cafe-principal-`<your suffix>` and hit 'Register'.
 * In the portal home, go to 'Subscriptions'. Go to your subscription. Note down your subscription ID.  Go to Access control (IAM) -> Role assignments -> Add -> Add role assignment. In Role -> Privileged administrator roles, choose 'Contributor'. In the Members tab, hit 'Select members'. Search for and select jakartaee-cafe-principal-`<your suffix>`. Click 'Review + assign'.
