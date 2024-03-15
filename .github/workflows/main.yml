@@ -34,9 +34,9 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          
+
       - name: Deploy WAR
-        uses: azure/webapps-deploy@v3
+        uses: azure/CLI@v1
         with:
-          app-name: jakartaee-cafe-web-reza
-          package: jakartaee-cafe/target/jakartaee-cafe.war
+          azcliversion: 2.30.0
+          inlineScript: az webapp deploy --resource-group jakartaee-cafe-group-reza --name jakartaee-cafe-web-reza --type war --src-path $GITHUB_WORKSPACE/jakartaee-cafe/target/jakartaee-cafe.war
