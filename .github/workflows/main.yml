@@ -25,18 +25,12 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: Build with Maven
-        run: mvn clean package --file jakartaee-cafe/pom.xml
-
       - name: Log into Azure
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}          
 
-      - name: Deploy WAR
-        uses: azure/CLI@v1
-        with:
-          azcliversion: 2.30.0
-          inlineScript: az webapp deploy --resource-group jakartaee-cafe-group-reza --name jakartaee-cafe-web-reza --type war --src-path $GITHUB_WORKSPACE/jakartaee-cafe/target/jakartaee-cafe.war
+      - name: Build and deploy with Maven
+        run: mvn clean package azure-webapp:deploy --file jakartaee-cafe/pom.xml
