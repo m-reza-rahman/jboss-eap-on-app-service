@@ -118,7 +118,7 @@ You may also deploy the applocation using GitHub Actions. The following is how y
 
 * In the portal home, go to 'Subscriptions'. Note down your subscription ID.
 * In the portal home, go to 'Microsoft Entra ID' -> App registrations -> New registration. For the name, specify jakartaee-cafe-principal-`<your suffix>` and hit 'Register'.
-* In the portal home, go to 'Microsoft Entra ID' -> App registrations -> All applications. Select jakartaee-cafe-principal-`<your suffix>`. Go to Certificates & secrets -> New client secret. Specify a description such as 'Jakarta EE Cafe Secret'. Hit 'Add'. Note down the secret value.
+* In the portal home, go to 'Microsoft Entra ID' -> App registrations -> All applications. Select jakartaee-cafe-principal-`<your suffix>`. Note down the tenant ID and client ID. Go to Certificates & secrets -> New client secret. Specify a description such as 'Jakarta EE Cafe Secret'. Hit 'Add'. Note down the secret value.
 * Clone this repository into your own GitHub account.
 * Go to Settings -> Secrets and variables -> Actions on your GitHub repository.
 * Click 'New repository secret'. Specify the secret name to be 'AZURE_CREDENTIALS'. The Value will be like below:
@@ -127,8 +127,8 @@ You may also deploy the applocation using GitHub Actions. The following is how y
 {
     "clientSecret":  "<Your client secret>",
     "subscriptionId":  "<Your subscription ID>",
-    "tenantId":  "******",
-    "clientId":  "******"
+    "tenantId":  "<Your tenant ID>",
+    "clientId":  "<Your client ID>"
 }
 ```
 
