@@ -117,21 +117,13 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
 You may also deploy the applocation using GitHub Actions. The following is how you do it.
 
 * In the portal home, go to 'Microsoft Entra ID' -> App registrations -> New registration. For the name, specify jakartaee-cafe-principal-`<your suffix>` and hit 'Register'.
-* In the portal home, go to 'Subscriptions'. Go to your subscription > Access control (IAM) -> Role assignments -> Add -> Add role assignment. In Role -> Privileged administrator roles, choose 'Contributor'. In the Members tab, hit 'Select members'. Search for and select jakartaee-cafe-principal-`<your suffix>`. Click 'Review + assign'.
+* In the portal home, go to 'Subscriptions'. Go to your subscription. Note down your subscription ID.  Go to Access control (IAM) -> Role assignments -> Add -> Add role assignment. In Role -> Privileged administrator roles, choose 'Contributor'. In the Members tab, hit 'Select members'. Search for and select jakartaee-cafe-principal-`<your suffix>`. Click 'Review + assign'.
 * In the portal home, go to 'Microsoft Entra ID' -> App registrations -> All applications. Select jakartaee-cafe-principal-`<your suffix>`. Note down the tenant ID and client ID. Go to Certificates & secrets -> Federated credentials -> Add credential. For the scenario, pick 'GitHub actions deploying Azure resources'. Fill out your GitHub information. Fill out a name like jakartaee-cafe-credential-`<your suffix>`. Hit 'Add'.
 * Clone this repository into your own GitHub account.
 * Go to Settings -> Secrets and variables -> Actions on your GitHub repository.
-* Click 'New repository secret'. Specify the secret name to be 'AZURE_CREDENTIALS'. The Value will be like below:
-
-```json
-{
-    "clientSecret":  "<Your client secret>",
-    "subscriptionId":  "<Your subscription ID>",
-    "tenantId":  "<Your tenant ID>",
-    "clientId":  "<Your client ID>"
-}
-```
-
+* Click 'New repository secret'. Specify the secret name to be 'AZURE_CLIENT_ID'. The Value will be the client ID you noted down.
+* Click 'New repository secret'. Specify the secret name to be 'AZURE_TENANT_ID'. The Value will be the tenent ID you noted down.
+* Click 'New repository secret'. Specify the secret name to be 'AZURE_SUBSCRIPTION_ID'. The Value will be the subscription ID you noted down.
 * Go to Actions -> Workflows -> All workflows -> Main Build -> Run workflow -> Run workflow.
 * When the job finishes running, the application will be deployed to App Service.
 
