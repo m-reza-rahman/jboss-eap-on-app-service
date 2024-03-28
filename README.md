@@ -1,5 +1,5 @@
 # Deploying a Java/Jakarta EE Application to JBoss EAP on Azure App Service
-This demo shows how you can deploy a Java/Jakarta EE application to Azure using managed JBoss EAP on App Service (App Service is the premier PaaS platform on Azure). It is the demo for [this](https://www.papercall.io/speakers/reza/speaker_talks/260453-hyperscale-jakarta-ee-paas-on-azure) talk.
+This demo shows how you can deploy a Java/Jakarta EE application to Azure using managed JBoss EAP on App Service (App Service is the premier PaaS platform on Azure). It is the demo for [this](https://www.papercall.io/speakers/reza/speaker_talks/260453-hyperscale-jakarta-ee-paas-on-azure) talk. A video of the talk is available [here](https://www.youtube.com/watch?v=dlmajeMxAnw).
 
 We use Visual Studio Code but you can use any Maven capable IDE such as Eclipse or IntelliJ. We use Azure PostgreSQL but you can use Azure SQL, Azure MySQL, or Oracle DB@Azure. We use GitHub Actions but you can use any other CI/CD tool such as Jenkins.
 
