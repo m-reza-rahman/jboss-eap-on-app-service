@@ -22,17 +22,19 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 ## Setup Managed JBoss EAP
 * Go to the [Azure portal](http://portal.azure.com).
 * Select 'Create a resource'. In the search box, enter and select 'Web App'. Hit create.
-* Enter jakartaee-cafe as application name and select jakartaee-cafe-group-`<your suffix>` as the resource group. Choose Java 17 as your runtime stack and JBoss EAP 8 as the Java web server stack. For the pricing plan, pick the free tier. Hit create.
+* Enter jakartaee-cafe as application name and select jakartaee-cafe-group-`<your suffix>` as the resource group. Choose Java 17 as your runtime stack and JBoss EAP 8 as the Java web server stack. You can optionally pick the free tier for your pricing plan. Hit create.
 
 ## Setup Environment Variables
 * In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the Settings -> Environment variables panel.
 * Add the following variables: DB_HOST=jakartaee-cafe-db-`<your suffix>`.postgres.database.azure.com, DB_USERNAME=postgres, DB_PASSWORD=Secret123!.
 
 ## Setup Health Check
+* Note that you cannot set up a health check on the free tier, so skip this if you chose the free tier.
 * In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the overview panel.
 * Click on Health Check -> Not Configured. Select 'Enable'. For the path enter '/rest/coffees'. Hit save.
 
 ## Setup Scale Out
+* Note that you cannot use scale out on the free tier, so skip this if you chose the free tier.
 * In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the scale out panel.
 * Select automatic. Hit save.
 
