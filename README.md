@@ -22,7 +22,7 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 ## Setup Managed JBoss EAP
 * Go to the [Azure portal](http://portal.azure.com).
 * Select 'Create a resource'. In the search box, enter and select 'Web App'. Hit create.
-* Enter jakartaee-cafe as application name and select jakartaee-cafe-group-`<your suffix>` as the resource group. Choose Java 17 as your runtime stack and JBoss EAP 8 as the Java web server stack. Hit create.
+* Enter jakartaee-cafe as application name and select jakartaee-cafe-group-`<your suffix>` as the resource group. Choose Java 17 as your runtime stack and JBoss EAP 8 as the Java web server stack. For the pricing plan, pick the free tier. Hit create.
 
 ## Setup Environment Variables
 * In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the server environment variables panel.
