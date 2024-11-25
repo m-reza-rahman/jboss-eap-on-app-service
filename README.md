@@ -128,6 +128,3 @@ You may also deploy the application using GitHub Actions. The following is how y
 * Click 'New repository secret'. Specify the secret name to be 'AZURE_SUBSCRIPTION_ID'. The Value will be the subscription ID you noted down.
 * Go to Actions -> Workflows -> All workflows -> Main Build -> Run workflow -> Run workflow.
 * When the job finishes running, the application will be deployed to App Service.
-
-## To Do
-* Create DB inside App Service dialog?
