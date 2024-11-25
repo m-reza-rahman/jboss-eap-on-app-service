@@ -35,11 +35,11 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 
 ## Setup Scale Out
 * Note that you cannot use scale out on the free tier, so skip this if you chose the free tier.
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the scale out panel.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the Settings -> Scale out panel.
 * Select automatic. Hit save.
 
 ## Setup Authentication
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the authentication panel.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the Settings -> Authentication panel.
 * Click on 'Add identity provider'. Choose and set up your favorite identity provider. If you choose Microsoft, just pick all the defaults.
 
 ## Install the Azure CLI
