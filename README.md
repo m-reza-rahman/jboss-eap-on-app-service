@@ -4,7 +4,7 @@ This demo shows how you can deploy a Java/Jakarta EE application to Azure using 
 We use Visual Studio Code but you can use any Maven capable IDE such as IntelliJ or Eclipse. We use Azure PostgreSQL but you can use Azure SQL, Azure MySQL, or Oracle DB@Azure. We use GitHub Actions but you can use any other CI/CD tool such as Jenkins.
 
 ## Setup
-* Install JDK 11 (we used [Eclipse Temurin OpenJDK 11 LTS](https://adoptium.net/?variant=openjdk11)).
+* Install JDK 17 (we used [Eclipse Temurin OpenJDK 17 LTS](https://adoptium.net/?variant=openjdk17)).
 * Install VS Code for Java from [here](https://code.visualstudio.com/docs/languages/java). Make sure the Java Extension Pack is installed.
 * Download this repository somewhere in your file system (easiest way might be to download as a zip and extract).
 * You will need an Azure subscription. If you don't have one, you can get one for free for one year [here](https://azure.microsoft.com/en-us/free).
