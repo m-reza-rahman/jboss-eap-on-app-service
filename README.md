@@ -25,19 +25,19 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 * Enter jakartaee-cafe as application name and select jakartaee-cafe-group-`<your suffix>` as the resource group. Choose Java 17 as your runtime stack and JBoss EAP 8 as the Java web server stack. For the pricing plan, pick the free tier. Hit create.
 
 ## Setup Environment Variables
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the server environment variables panel.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the server environment variables panel.
 * Add the following variables: DB_HOST=jakartaee-cafe-db-`<your suffix>`.postgres.database.azure.com, DB_USERNAME=postgres, DB_PASSWORD=Secret123!.
 
 ## Setup Health Check
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the overview panel.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the overview panel.
 * Click on Health Check -> Not Configured. Select 'Enable'. For the path enter '/rest/coffees'. Hit save.
 
 ## Setup Scale Out
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the scale out panel.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the scale out panel.
 * Select automatic. Hit save.
 
 ## Setup Authentication
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe-web-`<your suffix>`. Open the authentication panel.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the authentication panel.
 * Click on 'Add identity provider'. Choose and set up your favorite identity provider. If you choose Microsoft, just pick all the defaults.
 
 ## Install the Azure CLI
@@ -62,10 +62,10 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
     <artifactId>azure-webapp-maven-plugin</artifactId>
     <version>2.12.0</version>
     <configuration>
-        <appName>jakartaee-cafe-web-reza</appName>
+        <appName>jakartaee-cafe</appName>
         <resourceGroup>jakartaee-cafe-group-reza</resourceGroup>
-        <javaVersion>Java 11</javaVersion>
-        <webContainer>JBossEAP 7</webContainer>
+        <javaVersion>Java 17</javaVersion>
+        <webContainer>JBossEAP 8</webContainer>
         <appSettings>
             <!-- Increase the timeout -->
             <property>
