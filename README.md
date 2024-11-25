@@ -25,7 +25,7 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 * Enter jakartaee-cafe as application name and select jakartaee-cafe-group-`<your suffix>` as the resource group. Choose Java 17 as your runtime stack and JBoss EAP 8 as the Java web server stack. For the pricing plan, pick the free tier. Hit create.
 
 ## Setup Environment Variables
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the server environment variables panel.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the Settings -> Environment variables panel.
 * Add the following variables: DB_HOST=jakartaee-cafe-db-`<your suffix>`.postgres.database.azure.com, DB_USERNAME=postgres, DB_PASSWORD=Secret123!.
 
 ## Setup Health Check
