@@ -30,8 +30,8 @@ Once you are done exploring the demo, you should delete the jakartaee-cafe-group
 
 ## Setup Health Check
 * Note that you cannot set up a health check on the free tier, so skip this if you chose the free tier.
-* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the overview panel.
-* Click on Health Check -> Not Configured. Select 'Enable'. For the path enter '/rest/coffees'. Hit save.
+* In the portal home, go to 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Open the Monitoring -> Health check panel.
+* Select 'Enable'. For the path enter '/rest/coffees'. Hit save.
 
 ## Setup Scale Out
 * Note that you cannot use scale out on the free tier, so skip this if you chose the free tier.
