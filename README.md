@@ -75,9 +75,9 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
             <resources>
                 <resource>
                     <type>lib</type>
-                    <directory>${project.basedir}/src/main/jboss/config</directory>
+                    <directory>${project.build.directory}</directory>
                     <includes>
-                        <include>postgresql-42.7.4.jar</include>
+                        <include>postgresql.jar</include>
                     </includes>
                 </resource>
                 <resource>
@@ -108,8 +108,9 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
 ```
 
 * It is now time to deploy and run the application on Azure. Go to the Maven panel and then Jakarta EE Cafe -> Plugins -> azure-webapp -> deploy. Right click and hit 'Run'.
-* Keep an eye on the console output. You will see the application deployment progress. It may take a while for the deployment to complete. The application will be available at https://jakartaee-cafe-web-your-suffix.azurewebsites.net when it is successfully deployed.
-* Once the application starts, you can test the REST service at the URL: https://jakartaee-cafe-web-your-suffix.azurewebsites.net/rest/coffees or via the JSF client at https://jakartaee-cafe-web-your-suffix.azurewebsites.net/index.xhtml.
+* Keep an eye on the console output. You will see the application deployment progress. It may take a while for the deployment to complete.
+* Once successfully deployed, you can access the application through its public endpoint. To get the public endpoint, go to portal home -> 'All resources'. Find and click on the App Service instance named jakartaee-cafe. Go to the overview panel and copy the default domain. The application will be available at a URL like: https://jakartaee-cafe-suffix.azurewebsites.net.
+* Once the application starts, you can test the REST service at the URL: https://jakartaee-cafe-suffix.azurewebsites.net/rest/coffees or via the JSF client at https://jakartaee-cafe-web-suffix.azurewebsites.net/index.xhtml.
 
 ## Deploy using GitHub Actions
 You may also deploy the application using GitHub Actions. The following is how you do it.
