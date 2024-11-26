@@ -62,7 +62,7 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
 <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>2.12.0</version>
+    <version>2.13.0</version>
     <configuration>
         <appName>jakartaee-cafe</appName>
         <resourceGroup>jakartaee-cafe-group-reza</resourceGroup>
@@ -81,7 +81,7 @@ The next step is to get the application up and running on managed JBoss EAP. Fol
                     <type>lib</type>
                     <directory>${project.basedir}/src/main/jboss/config</directory>
                     <includes>
-                        <include>postgresql-42.7.1.jar</include>
+                        <include>postgresql-42.7.4.jar</include>
                     </includes>
                 </resource>
                 <resource>
