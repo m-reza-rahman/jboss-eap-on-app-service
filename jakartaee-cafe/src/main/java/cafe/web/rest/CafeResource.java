@@ -60,7 +60,7 @@ public class CafeResource {
 		try {
 			this.cafeRepository.removeCoffeeById(coffeeId);
 		} catch (IllegalArgumentException ex) {
-			logger.log(Level.SEVERE, "Error calling deleteCoffee() for coffeeId {0}: {1}.",
+			logger.log(Level.SEVERE, "Error deleting coffee with Id {0}: {1}.",
 					new Object[] { coffeeId, ex });
 			throw new WebApplicationException(Response.Status.NOT_FOUND);
 		}

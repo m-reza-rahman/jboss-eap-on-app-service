@@ -8,8 +8,9 @@ import java.util.logging.Logger;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Named;
-import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.ws.rs.WebApplicationException;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
@@ -29,10 +30,10 @@ public class Cafe implements Serializable {
 
 	private transient Client client;
 
-	@NotNull
-	@NotEmpty
+	@NotBlank
 	protected String name;
 	@NotNull
+	@PositiveOrZero
 	protected Double price;
 	protected List<Coffee> coffeeList;
 
