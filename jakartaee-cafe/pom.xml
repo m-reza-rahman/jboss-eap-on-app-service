@@ -7,27 +7,22 @@
     <groupId>jakartaee-cafe</groupId>
     <version>0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>${project.artifactId}</name>
+    <name>Jakarta EE Cafe</name>
     <description>This is the basic Jakarta EE application used throughout the Azure demos.
-        It is a simple CRUD application. It uses Maven and Jakarta EE 8 (REST, Enterprise Beans, 
+        It is a simple CRUD application. It uses Maven and Jakarta EE 10 (REST, Enterprise Beans, 
         Context and Dependency Injection, Persistence, Faces, Bean Validation). 
     </description>
     <properties>
-        <jakartaee.api.version>8.0.0</jakartaee.api.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.report.sourceEncoding>UTF-8</project.report.sourceEncoding>
+		<maven.compiler.release>17</maven.compiler.release>
+		<jakartaee.api.version>10.0.0</jakartaee.api.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
             <version>${jakartaee.api.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <!-- Required by Java SE 9+ -->
-        <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
-            <version>2.3.3</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -37,12 +32,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <inherited>true</inherited>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
+                <version>3.13.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -53,19 +43,16 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.4.0</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.microsoft.azure</groupId>
                 <artifactId>azure-webapp-maven-plugin</artifactId>
-                <version>2.12.0</version>
+                <version>2.13.0</version>
                 <configuration>
-                    <appName>jakartaee-cafe-web-reza</appName>
+                    <appName>jakartaee-cafe</appName>
                     <resourceGroup>jakartaee-cafe-group-reza</resourceGroup>
-                    <javaVersion>Java 11</javaVersion>
-                    <webContainer>JBossEAP 7</webContainer>
+                    <javaVersion>Java 17</javaVersion>
+                    <webContainer>JBossEAP 8</webContainer>
                     <appSettings>
                         <!-- Increase the timeout -->
                         <property>
@@ -79,7 +66,7 @@
                                 <type>lib</type>
                                 <directory>${project.basedir}/src/main/jboss/config</directory>
                                 <includes>
-                                    <include>postgresql-42.7.1.jar</include>
+                                    <include>postgresql-42.7.4.jar</include>
                                 </includes>
                             </resource>
                             <resource>
