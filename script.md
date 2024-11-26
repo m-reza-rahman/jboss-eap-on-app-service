@@ -1,3 +1,4 @@
+* Authentication (turned off for now)
 * App Insight
 * Log stream
 * SSH
