@@ -123,5 +123,5 @@ You may also deploy the application using GitHub Actions. The following is how y
 * Click 'New repository secret'. Specify the secret name to be 'AZURE_CLIENT_ID'. The Value will be the client ID you noted down.
 * Click 'New repository secret'. Specify the secret name to be 'AZURE_TENANT_ID'. The Value will be the tenent ID you noted down.
 * Click 'New repository secret'. Specify the secret name to be 'AZURE_SUBSCRIPTION_ID'. The Value will be the subscription ID you noted down.
-* Go to Actions -> Workflows -> All workflows -> Main Build -> Run workflow -> Run workflow.
+* Go to Actions -> All workflows -> Main Build -> Run workflow -> Run workflow.
 * When the job finishes running, the application will be deployed to App Service.
