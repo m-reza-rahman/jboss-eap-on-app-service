@@ -2,6 +2,7 @@ package cafe.web.view;
 
 import java.io.Serializable;
 import java.lang.invoke.MethodHandles;
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -34,7 +35,7 @@ public class Cafe implements Serializable {
 	protected String name;
 	@NotNull
 	@PositiveOrZero
-	protected Double price;
+	protected BigDecimal price;
 	protected List<Coffee> coffeeList;
 
 	public String getName() {
@@ -45,12 +46,12 @@ public class Cafe implements Serializable {
 		this.name = name;
 	}
 
-	public Double getPrice() {
+	public Number getPrice() {
 		return price;
 	}
 
-	public void setPrice(Double price) {
-		this.price = price;
+	public void setPrice(Number price) {
+		this.price = new BigDecimal(price.toString());
 	}
 
 	public List<Coffee> getCoffeeList() {
@@ -75,7 +76,7 @@ public class Cafe implements Serializable {
 	}
 
 	public void addCoffee() {
-		Coffee coffee = new Coffee(this.name, this.price);
+		Coffee coffee = new Coffee(this.name, this.price.doubleValue());
 		this.client.target(BASE_URI).request(MediaType.APPLICATION_JSON).post(Entity.json(coffee));
 		this.name = null;
 		this.price = null;
