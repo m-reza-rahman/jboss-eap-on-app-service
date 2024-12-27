@@ -85,6 +85,10 @@
                             <name>WEBSITES_CONTAINER_START_TIME_LIMIT</name>
                             <value>500</value>
                         </property>
+                        <property>
+                            <name>WEBSITE_SKIP_AUTOCONFIGURE_DATABASE</name>
+                            <value>true</value>
+                        </property>			    
                     </appSettings>
                     <deployment>
                         <resources>
